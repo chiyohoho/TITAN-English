@@ -128,3 +128,25 @@
         transition: transform 0.5s ease-in-out;
     }
 }
+
+.about_card {
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+
+    .about_card_c {
+        transition: scale 0.3s ease-in-out;
+    }
+
+    &:hover {
+        border-color: #003359;
+        transition: border-color 0.3s ease-in-out;
+
+
+        .about_card_c {
+            scale: 1.1;
+            transition: scale 0.3s ease-in-out;
+        }
+    }
+}

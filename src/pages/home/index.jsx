@@ -2,8 +2,9 @@ import { Box } from '@chakra-ui/react'
 import './styles.scss'
 
 import CarouselSlider from '../../components/CarouselSlider'
-import ScrollAnimationComponent from './class'
+import ScrollAnimationComponent from './courses'
 import VideoModal from '../../components/modalWelcome'
+import About from './about'
 
 
 const Homepage = () => {
@@ -16,6 +17,10 @@ const Homepage = () => {
 
       <Box zIndex={10} className='khoa_hoc bg-white min-h-[100vh] relative top-[-50px] rounded-t-[50px]' overflow={'hidden'}>
         <Box p={5} mt={20} >
+          <About />
+        </Box>
+
+        <Box p={5} mt={40} >
           <ScrollAnimationComponent />
         </Box>
       </Box>

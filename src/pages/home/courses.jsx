@@ -66,29 +66,31 @@ function ScrollAnimationComponent() {
 
 
     const [ref, inView] = useInView({
-        triggerOnce: true, // Chỉ kích hoạt hiệu ứng một lần
-        threshold: 0, // Ngưỡng kích hoạt là 50% phần tử xuất hiện trong vùng nhìn thấy
+        triggerOnce: true,
+        threshold: 0,
     });
 
-    // Sử dụng React Spring để tạo hiệu ứng mờ dần và trượt vào
     const props = useSpring({
-        opacity: inView ? 1 : 0, // Mờ dần từ 0 đến 1 khi phần tử trong vùng nhìn thấy
-        transform: inView ? 'translateY(0)' : 'translateY(50px)',
-        config: { duration: 1000 } // Di chuyển từ 20px xuống 0 khi phần tử trong vùng nhìn thấy
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(100px)',
+        config: { duration: 1000 }
+    });
+
+    const title = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0px)' : 'translateY(-100px)',
+        config: { duration: 500 }
     });
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-        // Hàm cập nhật chiều rộng màn hình
         const updateScreenWidth = () => {
             setScreenWidth(window.innerWidth);
         };
 
-        // Thêm event listener cho sự kiện resize
         window.addEventListener('resize', updateScreenWidth);
 
-        // Cleanup: Loại bỏ event listener khi component unmounts
         return () => {
             window.removeEventListener('resize', updateScreenWidth);
         };
@@ -106,7 +108,9 @@ function ScrollAnimationComponent() {
 
     return (
         <Box>
-            <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Các khóa học của <Text display={'inline-block'} color={'#dd5c29'}>TITAN ENGLISH</Text></Box>
+            <animated.div style={title}>
+                <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Giới thiệu về trung tâm <Text display={'inline-block'} color={'#dd5c29'}>TITAN ENGLISH</Text></Box>
+            </animated.div>
             <animated.div style={props} ref={ref}>
                 <Box mt={20}>
                     <Flex maxW={1000} justifyContent={'center'} gap={10} m={'0 auto'} >
