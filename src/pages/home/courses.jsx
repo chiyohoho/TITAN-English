@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 import './styles.scss'
 import { useEffect, useState } from 'react';
-import { CiBoxList, CiFileOn, CiFries, CiHeart, CiLinkedin, CiSignpostDuo1, CiSquareAlert, CiStar } from 'react-icons/ci';
+import { CiStar } from 'react-icons/ci';
 
 import {
     Modal,
@@ -26,7 +26,7 @@ function ScrollAnimationComponent() {
             benefits: ['Được thực hành với người bản xứ',
                 'Cố vấn học tập lên kế hoạch học tập dựa trên mục tiêu nghề nghiệp của bạn để giúp bạn luôn đi đúng hướng và có động lực học tiếng Anh.',
                 'Phương pháp học tiếng Anh đã được chứng minh hiệu quả dành cho người bận rộn.'],
-            image: 'https://i.imgur.com/HJkW0gL.png'
+            image: 'https://i.imgur.com/nKp8D4O.jpeg'
         },
         {
             id: 2,
@@ -36,7 +36,7 @@ function ScrollAnimationComponent() {
             benefits: ['Các hoạt động giúp kết nối các học viên và tối đa việc thực hành tiếng Anh với đa dạng chủ đề. Các hoạt động sẽ giúp bạn vừa học vừa chơi, tiếp thu hiệu quả, tối đa vận dụng tiếng Anh vào cuộc sống.',
                 'Kết quả được đảm bảo với một khóa học tiếng Anh linh hoạt mà bạn có thể bắt đầu ngay khi bạn muốn.',
                 'Sự kết hợp giữa các buổi tự học và học với đội ngũ giảng viên sẽ cung cấp giải pháp hỗ trợ và phản hồi khi bạn cần.'],
-            image: 'https://i.imgur.com/ZsaeqKO.png'
+            image: 'https://i.imgur.com/V3uudj6.jpeg'
         },
         {
             id: 3,
@@ -46,7 +46,7 @@ function ScrollAnimationComponent() {
             benefits: ['Các lớp học nhỏ để tối ưu hóa sự hỗ trợ cá nhân và thời gian học cùng giáo viên.',
                 'Cố vấn học tập sẽ đặt ra các mục tiêu học tập mang tính cá nhân hóa để giúp bạn có thêm nhiều đồng lực học tập và nhanh chóng đạt được mục tiêu đề ra.',
                 'Phương pháp học tiếng Anh đã được chứng minh hiệu quả dành cho người bận rộn.'],
-            image: 'https://i.imgur.com/oEzg6ie.png'
+            image: 'https://i.imgur.com/41Vw5xq.jpeg'
         },
         {
             id: 4,
@@ -56,7 +56,7 @@ function ScrollAnimationComponent() {
             benefits: ['Các lớp học sĩ số nhỏ giúp bạn tối đa thực hành với giáo viên bản xứ',
                 'Các cố vấn học tập giúp bạn thiết lập lộ trình học được cá nhân hóa, tiếp thêm động lực giúp bạn học tập đúng lộ trình.',
                 'Phương pháp học giúp bạn đạt mục tiêu đề ra thông qua các lớp học trực tuyến và thói quen chủ động học tập.'],
-            image: 'https://i.imgur.com/myQKUwt.png'
+            image: 'https://i.imgur.com/aVyZ9UU.jpeg'
 
         },
     ]
@@ -109,14 +109,14 @@ function ScrollAnimationComponent() {
     return (
         <Box>
             <animated.div style={title}>
-                <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Giới thiệu về trung tâm <Text display={'inline-block'} color={'#dd5c29'}>TITAN ENGLISH</Text></Box>
+                <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Các khóa học của chúng tôi</Box>
             </animated.div>
             <animated.div style={props} ref={ref}>
                 <Box mt={20}>
                     <Flex maxW={1000} justifyContent={'center'} gap={10} m={'0 auto'} >
                         <Grid className='courses_left' minW={'50%'}
                             templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']} gap={1} >
-                            {courses.map((item, index) => {
+                            {courses.map((item) => {
                                 return (
                                     <Box onClick={() => handleShowMore(item)} key={item.id} minW={'220px'} w={'100%'} className='relative overflow-hidden rounded-md'>
                                         <Image className='courses_img' objectFit={'cover'} w={'100%'} height={'100%'} src={item.image} alt='4' />
