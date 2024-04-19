@@ -1,0 +1,130 @@
+.swiper {
+    width: 100%;
+    position: relative;
+    transition: height 0.3s ease-in-out;
+
+    .scroll_loop {
+        left: 49%;
+        bottom: 10%;
+        width: 30px;
+        animation: auto-scroll-Y 2s ease-in-out infinite;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: white;
+    }
+}
+
+@keyframes auto-scroll-Y {
+    0% {
+        bottom: 15%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 15%;
+    }
+}
+
+/* Media query cho chiều rộng cửa sổ từ 1600px trở lên */
+@media (min-width: 1280px) {
+    .swiper {
+        height: 100vh;
+    }
+}
+
+/* Media query cho chiều rộng cửa sổ từ 1200px đến 1599px */
+@media (min-width: 964px) and (max-width: 1280px) {
+    .swiper {
+        height: 80vh;
+    }
+}
+
+/* Media query cho chiều rộng cửa sổ từ 1000px đến 1199px */
+@media (min-width: 768px) and (max-width: 964px) {
+    .swiper {
+        height: 70vh;
+    }
+}
+
+/* Media query cho chiều rộng cửa sổ từ 800px đến 999px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .swiper {
+        height: 60vh;
+    }
+}
+
+/* Media query cho chiều rộng cửa sổ từ 480px đến 799px */
+@media (min-width: 0px) and (max-width: 480px) {
+    .swiper {
+        height: 50vh;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses_left {
+    transition: all 0.3s ease-in-out;
+
+    &::-webkit-scrollbar {
+        width: 16px; // Độ rộng của thanh cuộn dọc
+        height: 16px; // Độ cao của thanh cuộn ngang (nếu có)
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; // Màu nền của thanh cuộn
+        border-radius: 10px; // Bo tròn các góc của thanh cuộn
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #dc5b28; // Màu của thanh cuộn
+        border-radius: 10px; // Bo tròn các góc của thanh cuộn
+        border: 4px solid #f1f1f1; // Đường viền tạo khoảng trống
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #dc5b28; // Màu khi di chuột lên
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: #dc5b28; // Màu khi kích hoạt
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none; // Ẩn mũi tên
+    }
+}
+
+.courses_img {
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+    }
+}
