@@ -1,10 +1,11 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 import './styles.scss'
 
 import CarouselSlider from '../../components/CarouselSlider'
 import ScrollAnimationComponent from './courses'
 import VideoModal from '../../components/modalWelcome'
 import About from './about'
+import Staff from './staff'
 
 
 const Homepage = () => {
@@ -24,6 +25,10 @@ const Homepage = () => {
           <ScrollAnimationComponent />
         </Box>
       </Box>
+
+      <Center className='staff bg-[#f3f3f7]'>
+        <Staff />
+      </Center>
 
       <VideoModal />
     </Box>

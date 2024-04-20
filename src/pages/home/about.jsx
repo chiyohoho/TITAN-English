@@ -17,19 +17,19 @@ function About() {
     const course = useSpring({
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateY(0%)' : 'translateY(30%)',
-        config: { duration: 500 },
+        config: { duration: 1000 },
     });
 
     const title = useSpring({
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateX(0px)' : 'translateX(100px)',
-        config: { duration: 500 }
+        config: { duration: 1000 }
     });
 
     const description = useSpring({
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateX(0px)' : 'translateX(-100px)',
-        config: { duration: 500 }
+        config: { duration: 1000 }
     });
 
 

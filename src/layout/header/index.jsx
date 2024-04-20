@@ -24,8 +24,8 @@ const Header = () => {
 
   return (
     <Box zIndex={100} bg={scrollY > 20 ? 'white' : 'transparent'} transition={'background 0.3s ease-in-out'} pos={"fixed"} w={'100%'} maxH={'100px'} height={'100%'} className='header_nav' >
-      <Box className='header_nav_margin' height={'100px'} maxW={'100vw'} m={'0 auto'} mt={scrollY > 20 ? 0 : 3} px={[2, 4, 6, 8, 10, 10]} boxShadow={scrollY > 20 ? 'rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px' : 'none'} >
-        <Flex pos={'relative'} height={'100px'} justifyContent={'center'} alignItems={'center'}>
+      <Box className='header_nav_margin' height={'100px'} maxW={'100vw'} mx={'auto'} pt={scrollY > 20 ? 0 : 3} px={[2, 4, 6, 8, 10, 10]} boxShadow={scrollY > 20 ? 'rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px' : 'transparent'} >
+        <Flex pos={'relative'} height={'100px'} justifyContent={'center'} alignItems={'center'} >
 
           <Flex className="cursor-pointer header_logo_left" alignItems={'center'} pos={'absolute'} left={-5} top={'50%'} transform={['scale(0.8)', 'scale(0.85)', 'scale(0.9)', 'scale(0.95)', 'scale(1)', 'scale(1)']}   >
             <Image minW={'100px'} w={'100px'} transform={'scale(1.5)'} src="https://i.imgur.com/jQz0CwD.png" alt="Wibu Food" />

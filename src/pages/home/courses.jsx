@@ -79,7 +79,7 @@ function ScrollAnimationComponent() {
     const title = useSpring({
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateY(0px)' : 'translateY(-100px)',
-        config: { duration: 500 }
+        config: { duration: 1000 }
     });
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -108,7 +108,7 @@ function ScrollAnimationComponent() {
 
     return (
         <Box>
-            <animated.div style={title}>
+            <animated.div style={title} ref={ref}>
                 <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Các khóa học của chúng tôi</Box>
             </animated.div>
             <animated.div style={props} ref={ref}>
