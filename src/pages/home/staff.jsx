@@ -143,7 +143,7 @@ const Staff = () => {
                     <animated.div style={card}>
                         {showStaff &&
                             <Box onClick={onOpen} zIndex={100} className={`staff_card ${isHovered ? 'hovered' : ''}`} overflow={'hidden'} >
-                                <Box w={150} height={150} overflow={'hidden'} rounded={10} >
+                                <Box w={150} height={150} overflow={'hidden'} rounded={'50%'} >
                                     <Image objectFit={'cover'} w={'100%'} height={'100%'} src={showStaff.avatar} alt={showStaff.name} />
                                 </Box >
                                 <Box textAlign={'center'}>
