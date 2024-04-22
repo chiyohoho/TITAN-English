@@ -85,7 +85,7 @@ const Register = () => {
 
 
     return (
-        <Box>
+        <Box px={5}>
             <animated.div className={'w-[100%]'} style={title} ref={ref}>
                 <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={[24, 28, 32, 36, 40]}>Đăng ký khóa học của
                     <Text color={'#dd5c29'}>
