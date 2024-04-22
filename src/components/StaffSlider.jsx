@@ -39,12 +39,12 @@ export default function StaffSlider({ staffs }) {
             >
                 {staffs.map((item) => {
                     return (
-                        <SwiperSlide key={item.id} className='card_small_p'>
-                            <Text className='card_small_name card_small_text absolute block'>{item.name}</Text>
-                            <Text className='card_small_graduate card_small_text absolute block'>{item.graduate}</Text>
-                            <Text className='card_small_certify card_small_text absolute block'>{item.certify}</Text>
-                            <Text className='card_small_experience absolute card_small_text block'>{item.experience}</Text>
-                            <Text className='card_small_student card_small_text absolute block'>{item.students}</Text>
+                        <SwiperSlide key={item.id} className='card_small_p w-[100%]'>
+                            <Text fontSize={[11, 12, 13, 14, 15, 16]} className='card_small_name card_small_text absolute '>{item.name}</Text>
+                            <Text fontSize={[11, 12, 13, 14, 15, 16]} className='card_small_graduate card_small_text absolute '>{item.graduate}</Text>
+                            <Text fontSize={[11, 12, 13, 14, 15, 16]} className='card_small_certify card_small_text absolute '>{item.certify}</Text>
+                            <Text fontSize={[11, 12, 13, 14, 15, 16]} className='card_small_experience absolute card_small_text '>{item.experience}</Text>
+                            <Text fontSize={[11, 12, 13, 14, 15, 16]} className='card_small_student card_small_text absolute '>{item.students}</Text>
                             <Image src={item.avatar} alt={item.name} />
                         </SwiperSlide>
                     )

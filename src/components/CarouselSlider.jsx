@@ -20,7 +20,7 @@ function CarouselSlider() {
 
     const [springs, api] = useSpring(() => ({
         from: { top: '70%', opacity: 0 },
-        to: { top: '50%', opacity: 1 },
+        to: { top: '55%', opacity: 1 },
         config: { mass: 1, tension: 170, friction: 26, duration: 700, bounce: 1 },
         reset: false,
     }));
@@ -32,7 +32,7 @@ function CarouselSlider() {
             setCurrentIndex(swiper.activeIndex);
             api.start({
                 from: { top: '70%', opacity: 0 },
-                to: { top: '50%', opacity: 1 },
+                to: { top: '55%', opacity: 1 },
                 config: { mass: 1, tension: 170, friction: 26, duration: 700, bounce: 1 },
                 reset: true,
             });
@@ -75,11 +75,11 @@ function CarouselSlider() {
                             }}
                         >
                             {index === 0 ?
-                                <Box>
-                                    <Text textAlign={'center'} fontSize={[16, 20, 24, 28, 32, 36]} fontWeight={500} color={'white'} textShadow={'0px 0px 3px black'}>
-                                        Bạn lo lắng vì các kỳ thi Tiếng Anh ?
+                                <Box w={'100%'}>
+                                    <Text w={'100%'} textAlign={'center'} fontSize={[12, 14, 24, 28, 32, 36]} fontWeight={500} color={'white'} textShadow={'0px 0px 3px black'}>
+                                        Bạn lo lắng vì các kỳ thi Tiếng Anh?
                                     </Text>
-                                    <Box textAlign={'center'} fontSize={[24, 30, 36, 42, 48, 54]} fontWeight={800} color={'tomato'} textShadow={'0px 0px 3px white'}>
+                                    <Box w={'100%'} textAlign={'center'} fontSize={[16, 20, 30, 42, 48, 54]} fontWeight={800} color={'tomato'} textShadow={'0px 0px 3px white'}>
                                         TITAN ENGLISH
                                         <Text textShadow={'0px 0px 3px black'} fontWeight={500} color={'white'}>
                                             có giải pháp giúp bạn vượt qua mọi khó khăn.
@@ -87,11 +87,11 @@ function CarouselSlider() {
                                     </Box>
                                 </Box>
                                 :
-                                <Box>
-                                    <Text textAlign={'center'} fontSize={[16, 20, 24, 28, 32, 36]} fontWeight={500} color={'white'} textShadow={'0px 0px 3px black'}>
-                                        Với đội ngũ giảng viên chất lượng ?
+                                <Box w={'100%'}>
+                                    <Text w={'100%'} textAlign={'center'} fontSize={[12, 14, 24, 28, 32, 36]} fontWeight={500} color={'white'} textShadow={'0px 0px 3px black'}>
+                                        Với đội ngũ giảng viên chất lượng?
                                     </Text>
-                                    <Box textAlign={'center'} fontSize={[24, 30, 36, 42, 48, 54]} fontWeight={800} color={'tomato'} textShadow={'0px 0px 3px white'}>
+                                    <Box w={'100%'} textAlign={'center'} fontSize={[16, 20, 30, 42, 48, 54]} fontWeight={800} color={'tomato'} textShadow={'0px 0px 3px white'}>
                                         TITAN ENGLISH
                                         <Text textShadow={'0px 0px 3px black'} fontWeight={500} color={'white'}>
                                             sẽ đảm bảo cho bạn những kiến thức đầy đủ, trước khi bước vào phòng thi.
