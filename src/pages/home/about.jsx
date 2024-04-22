@@ -38,7 +38,7 @@ function About() {
 
 
     return (
-        <Box>
+        <Box >
             <animated.div style={title}>
                 <Box textAlign={'center'} fontWeight={800} color={'#003359'} fontSize={40}>Giới thiệu về trung tâm <Text display={'inline-block'} color={'#dd5c29'}>TITAN ENGLISH</Text></Box>
             </animated.div>
@@ -48,7 +48,7 @@ function About() {
             </animated.div>
 
             <animated.div className='mt-[50px]' style={course} ref={ref}>
-                <Flex flexDir={['column', 'column', 'row', 'row', 'row', 'row']} maxW={1000} mx={'auto'} justifyContent={'space-between'} gap={1}>
+                <Flex flexDir={['column', 'column', 'row', 'row', 'row', 'row']} maxW={900} mx={'auto'} justifyContent={'space-between'} gap={1}>
                     <Box className='about_card rounded-full border-2 p-5' textAlign={'center'} w={'100%'}  >
                         <Box className='about_card_c'>
                             <Text fontWeight={700} fontSize={20} color={'#003359'}>Đội ngũ giáo viên chất lượng</Text>
@@ -68,7 +68,7 @@ function About() {
                     </Box>
                 </Flex>
 
-                <Flex my={[2, 2, 2, 10, 10, 10]} flexDir={['column', 'column', 'row', 'row', 'row', 'row']} maxW={1000} mx={'auto'} justifyContent={'space-between'} gap={1}>
+                <Flex my={[2, 2, 2, 10, 10, 10]} flexDir={['column', 'column', 'row', 'row', 'row', 'row']} maxW={900} mx={'auto'} justifyContent={'space-between'} gap={1}>
                     <Box className='about_card rounded-full border-2 p-5' textAlign={'center'} w={'100%'}  >
                         <Box className='about_card_c'>
                             <Text fontWeight={700} fontSize={20} color={'#003359'}>Hệ thống chi nhánh</Text>

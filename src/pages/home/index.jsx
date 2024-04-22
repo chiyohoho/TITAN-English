@@ -6,6 +6,7 @@ import ScrollAnimationComponent from './courses'
 import VideoModal from '../../components/modalWelcome'
 import About from './about'
 import Staff from './staff'
+import Register from './register'
 
 
 const Homepage = () => {
@@ -29,6 +30,10 @@ const Homepage = () => {
       <Center className='staff bg-[#f3f3f7]'>
         <Staff />
       </Center>
+
+      <Box className='register min-h-[100vh] overflow-hidden mt-[40px]'>
+        <Register />
+      </Box>
 
       <VideoModal />
     </Box>

@@ -25,7 +25,7 @@ export default function StaffSlider({ staffs }) {
             <Swiper
                 slidesPerView={'auto'}
                 centeredSlides={true}
-                spaceBetween={30}
+                spaceBetween={10}
                 pagination={{
                     clickable: true,
                 }}
@@ -34,14 +34,15 @@ export default function StaffSlider({ staffs }) {
                     disableOnInteraction: false,
                 }}
                 modules={[Pagination, Autoplay]}
-                className="mySwiper w-[350px]"
+                className="mySwiper w-[100%] rounded-xl px-0 sm:px-[100px] md:px-100 lg:px-100 xl:px-100 2xl:px-100"
                 onSwiper={setSwiper}
             >
                 {staffs.map((item) => {
                     return (
                         <SwiperSlide key={item.id} className='card_small_p'>
                             <Text className='card_small_name card_small_text absolute block'>{item.name}</Text>
-                            <Text w={'100%'} className='card_small_certify card_small_text absolute block'>{item.certify}</Text>
+                            <Text className='card_small_graduate card_small_text absolute block'>{item.graduate}</Text>
+                            <Text className='card_small_certify card_small_text absolute block'>{item.certify}</Text>
                             <Text className='card_small_experience absolute card_small_text block'>{item.experience}</Text>
                             <Text className='card_small_student card_small_text absolute block'>{item.students}</Text>
                             <Image src={item.avatar} alt={item.name} />
