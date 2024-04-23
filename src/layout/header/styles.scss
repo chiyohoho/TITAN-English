@@ -9,11 +9,8 @@
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0);
-        width: 100%;
-        height: 100vh;
-        z-index: -1;
         transition: background-color 0.3s ease-in-out;
+        transition: visibility 0.3s ease-in-out;
         visibility: hidden;
     }
 
@@ -28,7 +25,6 @@
         transition: height 0.3s ease-in-out;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        overflow: hidden;
     }
 
     &:has(.header_nav_option:hover)::after {
@@ -36,6 +32,7 @@
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.35);
         transition: background-color 0.3s ease-in-out;
+        transition: visibility 0.3s ease-in-out;
         z-index: -1;
         visibility: visible;
 
@@ -45,7 +42,6 @@
     &:has(.header_nav_option:hover)::before {
         height: 400%;
         transition: height 0.3s ease-in-out;
-        overflow: hidden;
     }
 
     &:has(.header_nav_option:hover) {

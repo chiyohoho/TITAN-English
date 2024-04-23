@@ -7,13 +7,14 @@ import VideoModal from '../../components/modalWelcome'
 import About from './about'
 import Staff from './staff'
 import Register from './register'
+import Feedback from './feedback'
 
 
 const Homepage = () => {
 
   return (
     <Box className='min-h-[100vh]'>
-      <Box className='carousel_slider' width={'100%'} zIndex={1}  >
+      <Box className='carousel_slider' width={'100%'}  >
         <CarouselSlider />
       </Box>
 
@@ -31,9 +32,13 @@ const Homepage = () => {
         <Staff />
       </Center>
 
-      <Box className='register min-h-[100vh] overflow-hidden mt-[40px]'>
+      <Box className='register mt-[50px] mb-[100px]'>
         <Register />
       </Box>
+
+      <Center className='feedback bg-[#f3f3f7]'>
+        <Feedback />
+      </Center>
 
       <VideoModal />
     </Box>

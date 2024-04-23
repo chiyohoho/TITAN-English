@@ -482,6 +482,35 @@
     }
 }
 
+.feedback_scroll {
+    &::-webkit-scrollbar {
+        width: 10px; // Độ rộng của thanh cuộn dọc
+        height: 16px; // Độ cao của thanh cuộn ngang (nếu có)
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #3a3b3c; // Màu nền của thanh cuộn
+        border-radius: 10px; // Bo tròn các góc của thanh cuộn
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #dc5b28; // Màu của thanh cuộn
+        border-radius: 10px; // Bo tròn các góc của thanh cuộn
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #dc5b28; // Màu khi di chuột lên
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: #dc5b28; // Màu khi kích hoạt
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none; // Ẩn mũi tên
+    }
+}
+
 @keyframes line1_circle {
     from {
         transform: rotate(0deg);

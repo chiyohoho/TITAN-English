@@ -23,7 +23,7 @@ const Header = () => {
 
 
   return (
-    <Box zIndex={100} bg={scrollY > 20 ? 'white' : 'transparent'} transition={'background 0.3s ease-in-out'} pos={"fixed"} w={'100%'} maxH={'100px'} height={'100%'} className='header_nav' >
+    <Box zIndex={1000} bg={scrollY > 20 ? 'white' : 'transparent'} transition={'background 0.3s ease-in-out'} pos={"fixed"} w={'100%'} maxH={'100px'} height={'100%'} className='header_nav' >
       <Box className='header_nav_margin' height={'100px'} maxW={'100vw'} mx={'auto'} pt={scrollY > 20 ? 0 : 3} px={[2, 4, 6, 8, 10, 10]} boxShadow={scrollY > 20 ? 'rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px' : 'transparent'} >
         <Flex pos={'relative'} height={'100px'} justifyContent={'center'} alignItems={'center'} >
 
