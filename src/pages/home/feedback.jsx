@@ -259,7 +259,7 @@ function Feedback() {
 
             <animated.div className='mt-[50px]' style={feedback} ref={ref} >
                 <Box w={[350, 450, 650, 750, 850, 950]} transition={'width 0.3s ease-in-out'}   >
-                    <Box className='rounded-xl' border={'2px solid #dd5c29'} p={2}>
+                    <Box className='rounded-xl' border={'2px dashed #dd5c29'} p={2}>
                         <FeedbackSlider feedbackList={feedbackList} />
                     </Box>
                 </Box>

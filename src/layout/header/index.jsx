@@ -28,7 +28,7 @@ const Header = () => {
         <Flex pos={'relative'} height={'100px'} justifyContent={'center'} alignItems={'center'} >
 
           <Flex className="cursor-pointer header_logo_left" alignItems={'center'} pos={'absolute'} left={-5} top={'50%'} transform={['scale(0.8)', 'scale(0.85)', 'scale(0.9)', 'scale(0.95)', 'scale(1)', 'scale(1)']}   >
-            <Image minW={'100px'} w={'100px'} transform={'scale(1.5)'} src="https://i.imgur.com/jQz0CwD.png" alt="Wibu Food" />
+            <Image minW={'100px'} w={'100px'} transform={'scale(1.5)'} src="https://i.imgur.com/jQz0CwD.png" alt="Titan English" />
 
             <Box zIndex={100} className="text-white text-center" lineHeight={1}>
               <Text className="text-[#dd5c29]" fontWeight={800} fontSize={20}>TITAN ENGLISH</Text>

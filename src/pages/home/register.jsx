@@ -95,7 +95,7 @@ const Register = () => {
             </animated.div>
 
             <animated.div style={form} ref={ref}>
-                <form onSubmit={handleSubmit(onSubmit)} className='max-w-[1000px] mx-[auto] border-2 border-[#dd5c29] mt-5 rounded-xl p-5'>
+                <form onSubmit={handleSubmit(onSubmit)} className='max-w-[1000px] mx-[auto] border-2 border-dashed border-[#dd5c29] mt-5 rounded-xl p-5'>
                     <Flex flexDir={['column', 'column', 'row', 'row', 'row', 'row']} gap={5} >
                         <Flex direction="column" mb={4} w={'100%'} gap={2}>
                             <Text fontSize="lg" fontWeight="bold">Thông tin cá nhân</Text>

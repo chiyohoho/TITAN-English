@@ -56,7 +56,7 @@ const Staff = () => {
         },
         {
             id: 5,
-            avatar: 'https://i.imgur.com/P7RNUp3.jpeg',
+            avatar: 'https://i.imgur.com/bwsJPLF.jpeg',
             name: 'Ms. Minh Tâm',
             graduate: 'Giảng viên khoa tiếng anh trường ĐH Bách Khoa TP.HCM',
             certify: 'Chứng chỉ C1 - HCMUTE, C1-Kettering University',
@@ -137,8 +137,8 @@ const Staff = () => {
         },
         {
             id: 14,
-            avatar: 'https://i.imgur.com/P7RNUp3.jpeg',
-            name: 'Ms. Nhi',
+            avatar: 'https://i.imgur.com/ksfWQlm.jpeg',
+            name: 'Ms. Yến Nhi',
             graduate: 'Cử nhân kinh tế - UTE',
             certify: 'Chứng chỉ TOEIC 900+',
             experience: '1 năm kinh nghiệm giảng dạy TOEIC',

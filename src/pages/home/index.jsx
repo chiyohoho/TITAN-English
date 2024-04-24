@@ -8,12 +8,13 @@ import About from './about'
 import Staff from './staff'
 import Register from './register'
 import Feedback from './feedback'
+import Hotline from './hotline'
 
 
 const Homepage = () => {
 
   return (
-    <Box className='min-h-[100vh]'>
+    <Box>
       <Box className='carousel_slider' width={'100%'}  >
         <CarouselSlider />
       </Box>
@@ -39,6 +40,10 @@ const Homepage = () => {
       <Center className='feedback bg-[#f3f3f7]'>
         <Feedback />
       </Center>
+
+      <Box className='my-[50px]'>
+        <Hotline />
+      </Box>
 
       <VideoModal />
     </Box>

@@ -1,4 +1,11 @@
 .footer {
-    font-weight: 500;
-    color: white;
+    .address {
+        font-weight: 500;
+        color: #2f658f;
+        cursor: pointer;
+
+        &:hover {
+            color: #003359;
+        }
+    }
 }
